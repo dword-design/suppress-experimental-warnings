@@ -1,3 +1,11 @@
+## [1.1.2](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.1...v1.1.2) (2022-12-03)
+
+
+### Bug Fixes
+
+* update config files ([e85d30f](https://github.com/dword-design/suppress-experimental-warnings/commit/e85d30ff8cc76afcb61a57fdff040d8693cfc44a))
+* write GitHub metadata to package.json [description] ([#3](https://github.com/dword-design/suppress-experimental-warnings/issues/3)) ([720b35e](https://github.com/dword-design/suppress-experimental-warnings/commit/720b35e7c3a45be88cfb38f4dc995665582474ee))
+
 ## [1.1.1](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.0...v1.1.1) (2022-12-03)
 
 
