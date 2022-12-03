@@ -4,17 +4,20 @@ import execa from 'execa'
 import P from 'path'
 
 export default {
-  works: async () =>
+  works: async () => {
+    console.log(JSON.stringify(require.resolve('.')))
+    console.log(JSON.stringify(P.resolve(require.resolve('.'))))
     expect(
       execa.command("node -e ''", {
         all: true,
         env: {
-          NODE_OPTIONS: `--require="${P.resolve(require.resolve(
-            '.'
-          ))}" --experimental-loader=${packageName`@dword-design/babel-register-esm`}`,
+          NODE_OPTIONS: `--require="${P.resolve(
+            require.resolve('.')
+          )}" --experimental-loader=${packageName`@dword-design/babel-register-esm`}`,
         },
       })
         |> await
         |> property('all')
-    ).toEqual(''),
+    ).toEqual('')
+  },
 }
