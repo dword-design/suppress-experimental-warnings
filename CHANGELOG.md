@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.0.0...v1.1.0) (2022-12-03)
+
+
+### Bug Fixes
+
+* fix test ([#2](https://github.com/dword-design/suppress-experimental-warnings/issues/2)) ([ef7d41b](https://github.com/dword-design/suppress-experimental-warnings/commit/ef7d41bf929fb783571ac66fcacaf8be46e486b8))
+
+
+### Features
+
+* code ([2565cae](https://github.com/dword-design/suppress-experimental-warnings/commit/2565cae0b8426b4aee8ff220c72a1f865213560d))
+
 # 1.0.0 (2022-12-03)
 
 
