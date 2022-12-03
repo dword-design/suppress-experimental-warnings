@@ -50,7 +50,7 @@
 <!-- /BADGES -->
 
 <!-- DESCRIPTION/ -->
-
+Filters experimental warnings from Node.js CLI output.
 <!-- /DESCRIPTION -->
 
 When using experimental Node.js features like experimental loaders, Node.js outputs some annoying warnings that clutter the CLI:
