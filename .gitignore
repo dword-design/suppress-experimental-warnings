@@ -1,0 +1,7 @@
+.DS_Store
+/.env.json
+/.nyc_output
+/.test.env.json
+/coverage
+/dist
+/node_modules

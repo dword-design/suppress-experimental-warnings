@@ -1,0 +1,11 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - command: eval $(gitpod-env-per-project)
+    init: git config --global user.name "Sebastian Landwehr" && git lfs pull && yarn
+      --frozen-lockfile
+vscode:
+  extensions:
+    - https://sebastianlandwehr.com/vscode-extensions/karlito40.fix-irregular-whitespace-0.1.1.vsix
+    - https://sebastianlandwehr.com/vscode-extensions/adrianwilczynski.toggle-hidden-1.0.2.vsix
+    - octref.vetur@0.33.1
