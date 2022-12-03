@@ -53,6 +53,15 @@
 
 <!-- /DESCRIPTION -->
 
+When using experimental Node.js features like experimental loaders, Node.js outputs some annoying warnings that clutter the CLI:
+
+```bash
+(node:1710) ExperimentalWarning: Custom ESM Loaders is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+```
+
+This package filters those warnings but leaves the others where they are.
+
 <!-- INSTALL/ -->
 ## Install
 
@@ -64,6 +73,20 @@ $ npm install suppress-experimental-warnings
 $ yarn add suppress-experimental-warnings
 ```
 <!-- /INSTALL -->
+
+## Usage
+
+### Via CLI
+
+```bash
+$ node --require=suppress-experimental-warnings --experimental-loader=node-esm-loader index.js
+```
+
+### Via environment variable
+
+```bash
+$ NODE_OPTIONS="--require=suppress-experimental-warnings --experimental-loader=node-esm-loader" index.js
+```
 
 <!-- LICENSE/ -->
 ## Contribute
