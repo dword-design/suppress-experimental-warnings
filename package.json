@@ -19,7 +19,11 @@
     "test": "base test"
   },
   "devDependencies": {
-    "@dword-design/base": "^9.1.6"
+    "@dword-design/babel-register-esm": "^1.0.7",
+    "@dword-design/base": "^9.1.6",
+    "@dword-design/functions": "^4.1.0",
+    "depcheck-package-name": "^2.0.6",
+    "execa": "^5"
   },
   "engines": {
     "node": ">=14"
