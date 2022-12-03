@@ -1,12 +1,12 @@
 <!-- TITLE/ -->
-# @dword-design/suppress-experimental-warnings
+# suppress-experimental-warnings
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
   <p>
-    <a href="https://npmjs.org/package/@dword-design/suppress-experimental-warnings">
+    <a href="https://npmjs.org/package/suppress-experimental-warnings">
       <img
-        src="https://img.shields.io/npm/v/@dword-design/suppress-experimental-warnings.svg"
+        src="https://img.shields.io/npm/v/suppress-experimental-warnings.svg"
         alt="npm version"
       >
     </a><img src="https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue" alt="Linux macOS Windows compatible"><a href="https://github.com/dword-design/suppress-experimental-warnings/actions">
@@ -58,10 +58,10 @@
 
 ```bash
 # npm
-$ npm install @dword-design/suppress-experimental-warnings
+$ npm install suppress-experimental-warnings
 
 # Yarn
-$ yarn add @dword-design/suppress-experimental-warnings
+$ yarn add suppress-experimental-warnings
 ```
 <!-- /INSTALL -->
 
