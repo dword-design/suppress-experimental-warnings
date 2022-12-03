@@ -30,5 +30,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "Filters experimental warnings from Node.js CLI output."
 }
