@@ -21,7 +21,8 @@ export default {
 
         import './mod.js'
       `,
-        'foo.json': JSON.stringify({}),
+        // Need some content so the test always fails
+        'foo.json': JSON.stringify({ foo: 'bar' }),
         'mod.js': "import './foo.json' assert { type: 'json' }",
         'package.json': JSON.stringify({ type: 'module' }),
       })
