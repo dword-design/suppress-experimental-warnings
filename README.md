@@ -88,6 +88,16 @@ $ node --require=suppress-experimental-warnings --experimental-loader=node-esm-l
 $ NODE_OPTIONS="--require=suppress-experimental-warnings --experimental-loader=node-esm-loader" index.js
 ```
 
+### Via ESM
+
+Since imports in ESM run [async](https://stackoverflow.com/questions/35551366/what-is-the-defined-execution-order-of-es6-imports), we have to make sure that the import runs before all other imports. This is needed when you cannot pass `suppress-experimental-warnings` via a a CLI argument. Note that at the time of writing this documentation, the import order seems to be non-deterministic (also for sync import).
+
+```js
+import 'suppress-experimental-warnings';
+
+await import('./your-app.js');
+```
+
 <!-- LICENSE/ -->
 ## Contribute
 
