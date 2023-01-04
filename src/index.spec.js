@@ -1,15 +1,24 @@
 import { endent, property } from '@dword-design/functions'
 import packageName from 'depcheck-package-name'
 import execa from 'execa'
+import { ensureDir, remove, symlink } from 'fs-extra'
 import outputFiles from 'output-files'
+import P from 'path'
 import withLocalTmpDir from 'with-local-tmp-dir'
 
 export default {
   module: () =>
     withLocalTmpDir(async () => {
+      await remove(P.join('..', 'node_modules', 'self', 'index.js'))
+      await ensureDir(P.join('..', 'node_modules', 'self'))
+      await symlink(
+        P.join('..', '..', 'src', 'index.js'),
+        P.join('..', 'node_modules', 'self', 'index.js')
+      )
       await outputFiles({
         'entry.js': endent`
-        import '../src/index.js'
+        import 'self'
+
         import './mod.js'
       `,
         'foo.json': JSON.stringify({}),

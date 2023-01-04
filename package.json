@@ -25,6 +25,7 @@
     "@dword-design/functions": "^4.1.0",
     "depcheck-package-name": "^2.0.6",
     "execa": "^5",
+    "fs-extra": "^11.1.0",
     "output-files": "^2.0.10",
     "with-local-tmp-dir": "^4.1.0"
   },
