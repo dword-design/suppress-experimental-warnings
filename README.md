@@ -90,7 +90,7 @@ $ NODE_OPTIONS="--require=suppress-experimental-warnings --experimental-loader=n
 
 ### Via ESM
 
-Since imports in ESM run [async](https://stackoverflow.com/questions/35551366/what-is-the-defined-execution-order-of-es6-imports), we have to make sure that the import runs before all other imports, which is need when you cannot pass `suppress-experimental-warnings` via a a CLI argument:
+Since imports in ESM run [async](https://stackoverflow.com/questions/35551366/what-is-the-defined-execution-order-of-es6-imports), we have to make sure that the import runs before all other imports. This is needed when you cannot pass `suppress-experimental-warnings` via a a CLI argument:
 
 ```js
 import 'suppress-experimental-warnings';
