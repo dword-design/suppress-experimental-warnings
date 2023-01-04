@@ -88,6 +88,15 @@ $ node --require=suppress-experimental-warnings --experimental-loader=node-esm-l
 $ NODE_OPTIONS="--require=suppress-experimental-warnings --experimental-loader=node-esm-loader" index.js
 ```
 
+### Via ESM
+
+Since this needs to run before any imports happen, you can use the async import method to import your main applicaiton after this package has been imported:
+
+```js
+import 'suppress-experimental-warnings';
+await import('./your-app.js');
+```
+
 <!-- LICENSE/ -->
 ## Contribute
 
