@@ -1,37 +1,33 @@
 import { endent, property } from '@dword-design/functions'
 import packageName from 'depcheck-package-name'
 import execa from 'execa'
-import { ensureDir, remove, symlink } from 'fs-extra'
 import outputFiles from 'output-files'
-import P from 'path'
 import withLocalTmpDir from 'with-local-tmp-dir'
 
-export default {
-  module: () =>
-    withLocalTmpDir(async () => {
-      await remove(P.join('..', 'node_modules', 'self', 'index.js'))
-      await ensureDir(P.join('..', 'node_modules', 'self'))
-      await symlink(
-        P.join('..', '..', 'src', 'index.js'),
-        P.join('..', 'node_modules', 'self', 'index.js')
-      )
-      await outputFiles({
-        'entry.js': endent`
-        import 'self'
+const nodeMajorVersion = parseInt(process.versions.node.split('.')[0], 10)
 
-        import './mod.js'
-      `,
-        // Need some content so the test always fails
-        'foo.json': JSON.stringify({ foo: 'bar' }),
-        'mod.js': "import './foo.json' assert { type: 'json' }",
-        'package.json': JSON.stringify({ type: 'module' }),
-      })
-      expect(
-        execa.command('node entry.js', { all: true })
-          |> await
-          |> property('all')
-      ).toEqual('')
-    }),
+export default {
+  ...(nodeMajorVersion > 14 && {
+    module: () =>
+      withLocalTmpDir(async () => {
+        // Execution order is non-deterministic (also when imported from node_modules)
+        await outputFiles({
+          'entry.js': endent`
+          import '../src/index.js'
+
+          await import('./mod.js')
+        `,
+          'foo.json': JSON.stringify({}),
+          'mod.js': "import './foo.json' assert { type: 'json' }",
+          'package.json': JSON.stringify({ type: 'module' }),
+        })
+        expect(
+          execa.command('node entry.js', { all: true })
+            |> await
+            |> property('all')
+        ).toEqual('')
+      }),
+  }),
   works: async () =>
     expect(
       execa.command(
