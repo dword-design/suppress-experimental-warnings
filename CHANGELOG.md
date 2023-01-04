@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.2...v1.1.3) (2023-01-04)
+
+
+### Bug Fixes
+
+* add example for using inside a module ([#9](https://github.com/dword-design/suppress-experimental-warnings/issues/9)) ([9728aa6](https://github.com/dword-design/suppress-experimental-warnings/commit/9728aa6e2a8b3478f0d6366105e8a66ab16ed50f))
+
 ## [1.1.2](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.1...v1.1.2) (2022-12-03)
 
 
