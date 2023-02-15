@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.3...v1.1.4) (2023-02-15)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#12](https://github.com/dword-design/suppress-experimental-warnings/issues/12)) ([90fbd28](https://github.com/dword-design/suppress-experimental-warnings/commit/90fbd28da8cdbb49b2614ee9484c2a883f5ff84b))
+
 ## [1.1.3](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.2...v1.1.3) (2023-01-04)
 
 
