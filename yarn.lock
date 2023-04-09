@@ -1492,9 +1492,9 @@
     babel-plugin-module-resolver "^4.0.0"
 
 "@dword-design/functions@^4.0.0", "@dword-design/functions@^4.0.7", "@dword-design/functions@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.1.0.tgz#98473461ddbd986bae884e591113653e30001369"
-  integrity sha512-rPNYH6mADaPMFRoROaHSvnFWExacY7t9oq45Jw++37mqsQay0IX4aHqfAsmWbJPU/wyx1LkqKvNI+mizzpjpYA==
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.1.5.tgz#085093243f3a558d84e1c005f4688264df923558"
+  integrity sha512-f+adQT0A+k5wBpIthLqLIRt9ZcxXFhlHdQb6zwJ2VYQWUpl6YgE5R0zSwbmDEXXnkM/QX3vKqkX6EMZ2W9qrSg==
   dependencies:
     "@dword-design/endent" "^1.0.0"
     delay "^5.0.0"
@@ -7446,14 +7446,7 @@ load-json-file@^4.0.0:
     pify "^3.0.0"
     strip-bom "^3.0.0"
 
-load-pkg@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/load-pkg/-/load-pkg-4.0.0.tgz#f80a29aec2f6d02aadde714099fda4eea1b611f1"
-  integrity sha512-xS6uYdbUzHbwO5bExhtM8RsU6Z/fVEfZE4uZpWQOwVygLSUfXz7J97nGzJfZ+FFCZc0Weabn/wA3y1k9Q7Y4mw==
-  dependencies:
-    find-pkg "^2.0.0"
-
-"load-pkg@npm:@dword-design/load-pkg":
+load-pkg@^4.0.0, "load-pkg@npm:@dword-design/load-pkg":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@dword-design/load-pkg/-/load-pkg-4.0.0.tgz#201f76adeb44c64ed22d789591ab740573fe0a5b"
   integrity sha512-lZxKRusgIqSg2y4jLzZzMPWyhrGPGke3YYmAxj4SoJeUGV4CmvYyhJkJnfA7Yaov7GMXZi64nlhx8D809VDazg==
