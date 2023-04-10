@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.10...v1.1.11) (2023-04-10)
+
+
+### Bug Fixes
+
+* update dependency with-local-tmp-dir to v5.0.1 ([218fbe6](https://github.com/dword-design/suppress-experimental-warnings/commit/218fbe6403c0f5b8e38d96078b4a4b24a941d336))
+
 ## [1.1.10](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.9...v1.1.10) (2023-04-10)
 
 
