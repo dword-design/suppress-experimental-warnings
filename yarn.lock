@@ -1190,7 +1190,7 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@dword-design/babel-config@^2.0.0", "@dword-design/babel-config@^2.1.1":
+"@dword-design/babel-config@^2.0.0":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@dword-design/babel-config/-/babel-config-2.2.1.tgz#d2563581f577908ea83ca661c5ffa43042216f64"
   integrity sha512-hu91gPpNCylul+WPZN3QcQ+0GX3KnCm55lew8vZvPBwNNT8iUnq7rT2D8LI6NwM8RRFskX9rOygUhsBhyychEA==
@@ -1212,10 +1212,32 @@
     load-pkg "npm:@dword-design/load-pkg"
     param-case "^3.0.3"
 
-"@dword-design/babel-register-esm@^1.0.7", "babel-register-esm@npm:@dword-design/babel-register-esm":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@dword-design/babel-register-esm/-/babel-register-esm-1.0.12.tgz#8ddcfd3b008dbe8a839b0dc20cb03ba9f5354a71"
-  integrity sha512-HnNGrAq1Q/Ft53Q1I8LQyKOZz1SlcR/st9HN0zc/ZJKeGpLtz4wKqEf/scQffU26tAdkgFAXlUFi5bI7/+8aPw==
+"@dword-design/babel-config@^2.1.1":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@dword-design/babel-config/-/babel-config-2.2.3.tgz#5a8f28b807170984a35d1d06f4bf740dfb68f073"
+  integrity sha512-7LT2w74YhdWq/iFe0ouAnuDd5zchfXQFv5phmeNOiYeAX2sz0XlopDvCPYrDl31JkvzdOCfgZKWKa8n7+tzJaQ==
+  dependencies:
+    "@babel/plugin-proposal-optional-chaining" "^7.6.0"
+    "@babel/plugin-proposal-pipeline-operator" "^7.5.0"
+    "@babel/plugin-syntax-import-assertions" "^7.20.0"
+    "@babel/preset-env" "^7.6.3"
+    "@babel/preset-typescript" "^7.13.0"
+    "@dword-design/functions" "^4.0.0"
+    "@vue/babel-preset-jsx" "github:dword-design/jsx#fork-babel-preset-jsx"
+    babel-plugin-add-module-exports "^1.0.2"
+    babel-plugin-macros "^3.0.1"
+    babel-plugin-module-resolver "^4"
+    babel-plugin-transform-imports "^2.0.0"
+    babel-plugin-wildcard "npm:@dword-design/babel-plugin-wildcard"
+    depcheck-package-name "^3.0.0"
+    find-up "^6.3.0"
+    load-pkg "npm:@dword-design/load-pkg"
+    param-case "^3.0.3"
+
+"@dword-design/babel-register-esm@^1.0.7":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@dword-design/babel-register-esm/-/babel-register-esm-1.0.14.tgz#9fd0c5c44d2ab9aa2abc85bcb49fa34d8c292113"
+  integrity sha512-6wa6EweExcaSQx5RDVUWzGjDrmCrHUn5zadjin1XDnqRka5SM9nwt4oioEUAsB/AiSUbVfdDTNc1yov4q7CIAQ==
   dependencies:
     "@dword-design/babel-config" "^2.1.1"
     package-resolver "^1.1.0"
@@ -2286,7 +2308,7 @@
     lodash.kebabcase "^4.1.1"
     svg-tags "^1.0.0"
 
-"@vue/babel-preset-jsx@dword-design/jsx#fork-babel-preset-jsx":
+"@vue/babel-preset-jsx@dword-design/jsx#fork-babel-preset-jsx", "@vue/babel-preset-jsx@github:dword-design/jsx#fork-babel-preset-jsx":
   version "1.1.2"
   uid a73cb9961541a60a66b1b99a69a32e00bc66d336
   resolved "https://codeload.github.com/dword-design/jsx/tar.gz/a73cb9961541a60a66b1b99a69a32e00bc66d336"
@@ -2307,6 +2329,7 @@
 
 "@vue/babel-sugar-inject-h@dword-design/jsx#fork-babel-sugar-inject-h":
   version "1.1.2"
+  uid cc36a2200c059120f37944615fb2ec0e22f8f3cc
   resolved "https://codeload.github.com/dword-design/jsx/tar.gz/cc36a2200c059120f37944615fb2ec0e22f8f3cc"
   dependencies:
     "@babel/plugin-syntax-jsx" "^7.2.0"
@@ -2898,6 +2921,14 @@ babel-preset-current-node-syntax@^1.0.0:
     "@babel/plugin-syntax-optional-chaining" "^7.8.3"
     "@babel/plugin-syntax-top-level-await" "^7.8.3"
 
+"babel-register-esm@npm:@dword-design/babel-register-esm":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@dword-design/babel-register-esm/-/babel-register-esm-1.0.12.tgz#8ddcfd3b008dbe8a839b0dc20cb03ba9f5354a71"
+  integrity sha512-HnNGrAq1Q/Ft53Q1I8LQyKOZz1SlcR/st9HN0zc/ZJKeGpLtz4wKqEf/scQffU26tAdkgFAXlUFi5bI7/+8aPw==
+  dependencies:
+    "@dword-design/babel-config" "^2.1.1"
+    package-resolver "^1.1.0"
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
@@ -3198,9 +3229,9 @@ camelcase@^6.0.0, camelcase@^6.2.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001449:
-  version "1.0.30001476"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001476.tgz#759906c53eae17133217d75b482f9dc5c02f7898"
-  integrity sha512-JmpktFppVSvyUN4gsLS0bShY2L9ZUslHLE72vgemBkS43JD2fOvKTKs+GtRwuxrtRGnwJFW0ye7kWRRlLJS9vQ==
+  version "1.0.30001477"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001477.tgz#a2ffb2276258233034bbb869d4558b02658a511e"
+  integrity sha512-lZim4iUHhGcy5p+Ri/G7m84hJwncj+Kz7S5aD4hoQfslKZJgt0tHc/hafVbqHC5bbhHb+mrW2JOUHkI5KH7toQ==
 
 capture-exit@^2.0.0:
   version "2.0.0"
