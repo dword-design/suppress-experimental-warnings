@@ -1,6 +1,6 @@
 {
   "name": "suppress-experimental-warnings",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "Filters experimental warnings from Node.js CLI output.",
   "repository": "dword-design/suppress-experimental-warnings",
   "funding": "https://github.com/sponsors/dword-design",

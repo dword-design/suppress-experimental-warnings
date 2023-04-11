@@ -1,3 +1,10 @@
+## [1.1.13](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.12...v1.1.13) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency output-files to v2.0.25 ([7271e58](https://github.com/dword-design/suppress-experimental-warnings/commit/7271e58084fa19dc6e51d9c2c20cbb374ab4bfda))
+
 ## [1.1.12](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.11...v1.1.12) (2023-04-10)
 
 
