@@ -21,6 +21,9 @@
     "prepublishOnly": "base prepublishOnly",
     "test": "base test"
   },
+  "dependencies": {
+    "jiti": "^1.18.2"
+  },
   "devDependencies": {
     "@dword-design/babel-register-esm": "^1.0.7",
     "@dword-design/base": "^9.1.6",
