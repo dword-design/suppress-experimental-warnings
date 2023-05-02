@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.16...v1.1.17) (2023-05-02)
+
+
+### Bug Fixes
+
+* fix jiti ([#34](https://github.com/dword-design/suppress-experimental-warnings/issues/34)) ([5915183](https://github.com/dword-design/suppress-experimental-warnings/commit/5915183893b71f924d94d198090c5ec070cd6e13))
+
 ## [1.1.16](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.15...v1.1.16) (2023-04-12)
 
 
