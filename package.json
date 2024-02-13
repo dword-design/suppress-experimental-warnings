@@ -25,7 +25,7 @@
     "jiti": "^1.18.2"
   },
   "devDependencies": {
-    "@dword-design/babel-register-esm": "^1.0.7",
+    "@dword-design/babel-register-esm": "^2.0.0",
     "@dword-design/base": "^9.1.6",
     "@dword-design/functions": "^4.1.0",
     "depcheck-package-name": "^3.0.0",
