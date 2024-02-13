@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.17...v2.0.0) (2024-02-13)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#45](https://github.com/dword-design/suppress-experimental-warnings/issues/45)) ([5939bf7](https://github.com/dword-design/suppress-experimental-warnings/commit/5939bf7431fd247d23c7d21e0b7dc96ad16bbc6b))
+
+
+### BREAKING CHANGES
+
+* node.js >= 18
+
 ## [1.1.17](https://github.com/dword-design/suppress-experimental-warnings/compare/v1.1.16...v1.1.17) (2023-05-02)
 
 
