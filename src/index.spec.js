@@ -13,6 +13,9 @@ export default {
       withLocalTmpDir(async () => {
         // Execution order is non-deterministic (also when imported from node_modules)
         await outputFiles({
+          '.babelrc.json': JSON.stringify({
+            plugins: [packageName`@babel/plugin-syntax-import-assertions`],
+          }),
           'entry.js': endent`
             import '../dist/cjs-fallback.cjs'
 
@@ -32,7 +35,7 @@ export default {
   works: async () =>
     expect(
       execaCommand(
-        `node --require=. --experimental-loader=${packageName`@dword-design/babel-register-esm`} -e ''`,
+        `node --require=. --experimental-loader=${packageName`babel-register-esm`} -e ''`,
         { all: true },
       )
         |> await
