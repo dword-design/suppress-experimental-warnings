@@ -22,7 +22,7 @@
     "test": "base test"
   },
   "dependencies": {
-    "jiti": "^1.18.2"
+    "jiti": "^2.0.0"
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-assertions": "^7.23.3",
