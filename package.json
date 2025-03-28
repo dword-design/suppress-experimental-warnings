@@ -30,7 +30,7 @@
     "@dword-design/functions": "^5.0.27",
     "babel-register-esm": "npm:@dword-design/babel-register-esm@^2",
     "depcheck-package-name": "^3.0.0",
-    "execa": "^8.0.1",
+    "execa": "^9.0.0",
     "output-files": "^2.0.10",
     "with-local-tmp-dir": "^5.0.0"
   },
