@@ -31,7 +31,7 @@
     "babel-register-esm": "npm:@dword-design/babel-register-esm@^2",
     "depcheck-package-name": "^3.0.0",
     "execa": "^8.0.1",
-    "output-files": "^2.0.10",
+    "output-files": "^3.0.0",
     "with-local-tmp-dir": "^5.0.0"
   },
   "engines": {
