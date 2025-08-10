@@ -27,7 +27,7 @@
   "devDependencies": {
     "@babel/plugin-syntax-import-assertions": "^7.23.3",
     "@dword-design/base": "^11.0.3",
-    "@dword-design/functions": "^5.0.27",
+    "@dword-design/functions": "^6.0.0",
     "babel-register-esm": "npm:@dword-design/babel-register-esm@^2",
     "depcheck-package-name": "^3.0.0",
     "execa": "^8.0.1",
